@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from utils import *
 from predict import model_predict, get_R, cluster, test, get_MAE, get_MSE
-from dataset import ViT_HER2ST, HER2ST, ViT_HER2ST_Hist2ST
+from dataset import ViT_HER2ST, ViT_HER2ST_Hist2ST
 import random
 
 #

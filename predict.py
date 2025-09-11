@@ -32,11 +32,17 @@ def model_predict(model, test_loader, model_type=None, adata=None, attention=Tru
                 ct = center
                 gt = exp
             else:
-                preds = torch.cat((preds,pred),dim=0)
-
+                
                 #dim = 0 for stnet, dim = 1 for histogene
-                ct = torch.cat((ct,center),dim=1)
-                gt = torch.cat((gt,exp),dim=1)
+                print(model_type)
+                if model_type == "Histogene":
+                    preds = torch.cat((preds,pred),dim=1)
+                    ct = torch.cat((ct,center),dim=1)
+                    gt = torch.cat((gt,exp),dim=1)
+                else:
+                    preds = torch.cat((preds,pred),dim=0)
+                    ct = torch.cat((ct,center),dim=0)
+                    gt = torch.cat((gt,exp),dim=0)
 
     
     preds = preds.cpu().squeeze().numpy()

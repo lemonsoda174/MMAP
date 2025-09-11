@@ -6,22 +6,20 @@ Models implemented so far:
 * ST-Net
 * HisToGene
 * DeepPT
-  
-Models not yet implemented:
 * Hist2ST
 * TCGN
 
 # Installation guide
 
 * Download data: Run "git clone https://github.com/almaan/her2st.git" in the "data" folder to clone the HER2ST dataset  
-* To unzip files in ST-cnts, cd into "Net/data/her2st/data/ST-cnts/" and run "gunzip *.gz"  
+* To unzip files in ST-cnts, cd into "MMAP-Baselines/data/her2st/data/ST-cnts/" and run "gunzip *.gz"  
 * Run "pip install -r requirements.txt" to download all the necessary Python libraries (with the versions we are using)
 
 Note: You may encounter installation issues. In such case, refer to the Guide for Installation or Compatibility issues (.txt file)
 
 # Usage
 
-For ST-Net and HisToGene:  
+For ST-Net, HisToGene, Hist2ST, TCGN:  
 1. Train: Run ST_train.py and choose the model you wish to use. The model will conduct training and save checkpoints once completed.  
 2. Test: Run ST_predict.py and choose the model you wish to use. Results printed are shown in metrics (printed in cmd line) and figures (imgs saved in the "figures" folder)  
 
@@ -52,7 +50,7 @@ Since the code provided in their GitHub has been deprecated, we referred to the 
   <i>Brief Bioinform</i> (2022).
 
 (Deprecated; will update TCGN here later)
-[**EGN**](https://github.com/Yan98/EGN)
-> [**Exemplar Guided Deep Neural Network for Spatial Transcriptomics Analysis of Gene Expression Prediction**](https://doi.org/10.48550/arXiv.2210.16721)  
- by Yan Yang, Md Zakir Hossain, Eric A Stone, Shafin Rahman.  
-  <i>arxiv</i> (2022).
+[**TCGN**](https://github.com/lugia-xiao/TCGN)
+> [**Transformer with Convolution and Graph-Node co-embedding: A accurate and interpretable vision backbone for predicting gene expressions from local histopathological image**](https://doi.org/10.1101/2023.05.28.542669)  
+ by Xiao Xiao, Yan Kong, Zuoheng Wang, Hui Lu.  
+  <i>Medical Image Analysis</i> (2024).

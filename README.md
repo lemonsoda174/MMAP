@@ -1,12 +1,13 @@
-# ST-problem baselines
+# MMAP: A Multi-Magnification and Prototype-Aware Architecture for Predicting Spatial Gene Expression
+Link to paper: https://arxiv.org/abs/2510.11344
 
-Here, we reimplemented a number of different models for a task related to Spatial Transcriptomics (ST) - predicting gene expression from Whole Slide Images (WSIs)
+Here, we reimplemented a number of different baselines models for a task related to Spatial Transcriptomics (ST) - predicting gene expression from Whole Slide Images (WSIs)
+Original source code for our proposed method will be updated later
 
 Models implemented so far: 
 * ST-Net
 * HisToGene
 * DeepPT
-* Hist2ST
 * TCGN
 
 # Installation guide
@@ -19,7 +20,7 @@ Note: You may encounter installation issues. In such case, refer to the Guide fo
 
 # Usage
 
-For ST-Net, HisToGene, Hist2ST, TCGN:  
+For ST-Net, HisToGene, TCGN:  
 1. Train: Run ST_train.py and choose the model you wish to use. The model will conduct training and save checkpoints once completed.  
 2. Test: Run ST_predict.py and choose the model you wish to use. Results printed are shown in metrics (printed in cmd line) and figures (imgs saved in the "figures" folder)  
 
@@ -32,7 +33,7 @@ For DeepPT:
   by Bryan He, Ludvig Bergenstråhle, Linnea Stenbeck, Abubakar Abid, Alma Andersson, Åke Borg, Jonas Maaskola, Joakim Lundeberg & James Zou.  
   <i>Nature Biomedical Engineering</i> (2020).
 
-Since the code provided in their GitHub has been deprecated, we referred to the re-implemented versions from authors of HisToGene and Hist2ST to reproduce our own re-implemented version of ST-Net
+Since the code provided in their GitHub has been deprecated, we referred to the re-implemented versions from authors of HisToGene to reproduce our own re-implemented version of ST-Net
 
 [**HisToGene**](https://github.com/maxpmx/HisToGene)
 > [**Leveraging information in spatial transcriptomics to predict super-resolution gene expression from histology images in tumors**](https://doi.org/10.1101/2021.11.28.470212)  
@@ -44,12 +45,6 @@ Since the code provided in their GitHub has been deprecated, we referred to the 
   by Hoang, DT., Dinstag, G., Shulman, E.D. et al.  
   <i>Nature Cancer</i> (2024).
 
-[**Hist2ST**](https://github.com/biomed-AI/Hist2ST)
-> [**Spatial transcriptomics prediction from histology jointly through Transformer and graph neural networks**](https://doi.org/10.1093/bib/bbac297)  
- by Zeng Y, Wei Z, Yu W, Yin R, Yuan Y, Li B, Tang Z, Lu Y, Yang Y.  
-  <i>Brief Bioinform</i> (2022).
-
-(Deprecated; will update TCGN here later)
 [**TCGN**](https://github.com/lugia-xiao/TCGN)
 > [**Transformer with Convolution and Graph-Node co-embedding: A accurate and interpretable vision backbone for predicting gene expressions from local histopathological image**](https://doi.org/10.1101/2023.05.28.542669)  
  by Xiao Xiao, Yan Kong, Zuoheng Wang, Hui Lu.  
